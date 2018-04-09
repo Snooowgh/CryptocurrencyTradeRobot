@@ -4,6 +4,7 @@
 ```bash
 go get -v github.com/Snooowgh/GoEx
 go get -v github.com/robfig/cron
+go get -v github.com/Snooowgh/CryptocurrencyTradeRobot
 ```
 
 ### How to implement?

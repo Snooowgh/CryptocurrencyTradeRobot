@@ -1,12 +1,9 @@
 package strategy
 
 import (
-	"fmt"
 	"github.com/Snooowgh/CryptocurrencyTradeRobot/strategyframe"
-	. "github.com/Snooowgh/CryptocurrencyTradeRobot/MetaData"
 	"github.com/Snooowgh/GoEx"
 	"github.com/Snooowgh/GoEx/huobi"
-	"strconv"
 )
 //高抛低吸策略   杠杆交易  提前借好Pair   设定最低最高价  自动网格交易
 //使用了点卡并且交易网格足够大  因此不考虑手续费
@@ -35,9 +32,7 @@ func (this *SHBLStrategy) Initialize(hb huobi.HuoBi_V2, acc goex.Account) {
 }
 
 func (this *SHBLStrategy) Handle_data() {
-	buy,sell := this.hb2.GetRealtimePrice(this.Pair)
-
-
+	//buy,sell := this.hb2.GetRealtimePrice(this.Pair)
 
 }
 func (this *SHBLStrategy) RefreshRate() (int, string) {
